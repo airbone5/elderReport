@@ -1,0 +1,105 @@
+
+
+running D:\Activity\elderman\Rmd\profile.do ...
+
+
+. recode life (0/8=0)(9/max=1),gen(lifelohi)
+(11119 differences between life and lifelohi)
+
+. label define lifelohi 0 "低於9" 1 "大於9"
+
+. label value lifelohi lifelohi 
+
+.  eststo clear
+
+.  estpost tabstat $xcont100 $xcat $xalt1  $yall , by(lifelohi) ///
+>      statistics(count mean sd)  columns(statistics) 
+
+Summary statistics: count mean sd
+     for variables: heal100 fami100 depre100 money100 relin incsrc mar taba alc
+> o spor exam_year sex educ child incom y1 y2 y3 y4 y5 y6
+  by categories of: lifelohi
+
+    lifelohi |  e(count)    e(mean)      e(sd) 
+-------------+---------------------------------
+低於9        |                                 
+     heal100 |      4256   42.86302   25.87523 
+     fami100 |      4256   57.40269   30.95826 
+    depre100 |      4256   21.55065   19.91311 
+    money100 |      3450    47.4942   23.36825 
+       relin |      4252   .8572437   .3498653 
+      incsrc |      4255   .5356052   .4987893 
+         mar |      4255   .5755582   .4943161 
+        taba |      4255    .253349   .4349802 
+        alco |      4256   .2175752   .4126454 
+        spor |      4255   .5017626   .5000557 
+   exam_year |      3743   .4370826   .4960919 
+         sex |      4256   .5357143   .4987815 
+        educ |      4256   1.473684   1.460732 
+       child |      4256   3.289004   1.416416 
+       incom |      2572   3.727838   1.986877 
+          y1 |      4256    83.7859   12.57003 
+          y2 |      4256   87.08546   29.25119 
+          y3 |      4256   73.96735   28.87748 
+          y4 |      4256   77.82226   32.06015 
+          y5 |      3491   72.04383   18.93922 
+          y6 |      4256   5.988604   10.60061 
+-------------+---------------------------------
+大於9        |                                 
+     heal100 |      7673   60.34472   24.46844 
+     fami100 |      7673   82.57768   12.45785 
+    depre100 |      7673   16.55052   11.36015 
+    money100 |      7658   62.51436    20.2105 
+       relin |      7670   .8766623   .3288459 
+      incsrc |      7671    .629253   .4830363 
+         mar |      7673   .7429949   .4370107 
+        taba |      7673   .2070898   .4052469 
+        alco |      7673   .3161736   .4650119 
+        spor |      7673   .7089795   .4542625 
+   exam_year |      5855   .5287788   .4992137 
+         sex |      7673   .4841653   .4997818 
+        educ |      7673   1.710283   1.402318 
+       child |      7673   3.376776   1.299602 
+       incom |      4184   4.915153   2.055812 
+          y1 |      7673   87.18008   11.47192 
+          y2 |      7673   98.91125   7.529942 
+          y3 |      7673   90.73087   15.61182 
+          y4 |      7673   94.82992   13.41901 
+          y5 |      7669   82.72461    15.3627 
+          y6 |      7673   9.838069   13.15882 
+-------------+---------------------------------
+Total        |                                 
+     heal100 |     11929   54.10764   26.34498 
+     fami100 |     11929   73.59581   24.23154 
+    depre100 |     11929   18.33446   15.17222 
+    money100 |     11108    57.8493   22.34884 
+       relin |     11922   .8697366   .3366071 
+      incsrc |     11926    .595841   .4907491 
+         mar |     11928   .6832663   .4652221 
+        taba |     11928   .2235915   .4166688 
+        alco |     11929   .2809959   .4495043 
+        spor |     11928   .6350604   .4814334 
+   exam_year |      9598   .4930194   .4999773 
+         sex |     11929   .5025568   .5000144 
+        educ |     11929    1.62587   1.427879 
+       child |     11929   3.345461   1.343045 
+       incom |      6756   4.463144   2.109996 
+          y1 |     11929   85.96911   11.98565 
+          y2 |     11929   94.69207   19.33364 
+          y3 |     11929   84.75002   22.77575 
+          y4 |     11929   88.76197    23.4279 
+          y5 |     11160   79.38351   17.28829 
+          y6 |     11929   8.464666   12.44423 
+
+. 
+. genfilename "$outposix",post(.html) pre("report/")  autoinc 
+檔案名稱:report/out_seexy9296104_1.html
+
+. esttab using  "`r(fn)'", cells("count(fmt(%9.1f)) mean(fmt(%9.1f)) sd(fmt(%9.
+> 1f))") label nowrap  mtitle title("分年") nonumbers unstack noline html
+(output written to report/out_seexy9296104_1.html)
+
+. 
+. 
+. 
+end of do-file

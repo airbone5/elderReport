@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="lin" />
+
+
+<title>總表</title>
+
+<script src="site_libs/header-attrs-2.3/header-attrs.js"></script>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/clipboard-1.7.1/clipboard.min.js"></script>
+<link href="site_libs/allcodecopy-0.0.0.2020/css/twowaytable.css" rel="stylesheet" />
+<link href="site_libs/allcodecopy-0.0.0.2020/css/mystyle.css" rel="stylesheet" />
+<script src="site_libs/allcodecopy-0.0.0.2020/js/collectCopy.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
+<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+
+
+<style type="text/css">
+h1 {
+  font-size: 28px;
+  color:#E74C3C;
+}
+h1.title {
+  font-size: 34px;
+}
+h2 {
+  font-size: 24px;
+  color:#2ECC71;  
+}
+h3 {
+  font-size: 20px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+div.main-container {
+  max-width: 2400px;
+}
+
+div.tocify {
+  width: 15%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 15%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-2">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-10">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Elder Report</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="Index.html">Home</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">總表</h1>
+<h4 class="author"><em>lin</em></h4>
+<h4 class="date"><em>06 十月, 2020, 09:29</em></h4>
+
+</div>
+
+
+<style type="text/css">
+
+.toc-content  ul {
+  list-style: none;
+}
+.toc-content ul li::before {
+  content: "✔" ;
+  display: inline-block;
+  margin-right: 0.2rem;
+}
+.toc-content ul ul li::before {
+  content: "📌";
+}
+.toc-content ul ul ul li::before {
+  content: "🤷‍♀️";
+}
+.toc-content {
+letter-spacing: 2px;
+}
+</style>
+<div id="模型" class="section level1">
+<h1>模型</h1>
+<div id="state-2-迴歸結果" class="section level2">
+<h2>state 2: 迴歸結果</h2>
+<div id="版本5" class="section level3 quiz">
+<h3>🉐版本5</h3>
+<ul>
+<li><a href="panel92_104_v5.html">panel 92-104,Y是Life</a>(更新時間2020-10-02 10:30:46)<br />
+</li>
+<li><a href="panel92_96_104_v5.html">panel 92,96,104,Y是Life</a>(更新時間2020-10-02 10:55:52)
+<ul>
+<li><a href="Seexy92_96_104_v5.html">上面回歸變數的統計量</a>(更新時間2020-10-02 10:59:48)</li>
+</ul></li>
+<li>🆕 <a href="panel_oy_combo_v5.html">panel 4期,Y有分總分,分項,生活滿意度,自覺經濟,自覺健康</a>(更新時間2020-10-05 21:33:26)</li>
+<li>🆕 🐤🐙<a href="combo4_rank_v5.html">panel 4期,亂搞中獎</a>(更新時間2020-10-05 22:11:40)🐤🐙</li>
+<li>🆕 <a href="combo4_logit_v5.html">panel 4 panel logit</a>
+<ul>
+<li><a href="combo4_seexy_v5.html">4年統計量</a></li>
+</ul></li>
+<li>❌<a href="panel_oy_combo3_v5_3p.html">panel 3期,Y是原來的Y,LIFE跑到X</a></li>
+</ul>
+</div>
+<div id="版本4" class="section level3">
+<h3>版本4</h3>
+<p>目前都是使用 ../transfer/elder104.dta (state 1 產生)。</p>
+<ul>
+<li><a href="second_v9.html">線性迴歸,版9</a>(更新時間NA)
+<ul>
+<li>只有104年</li>
+</ul></li>
+<li>倒回歸<a href="reverse_v2.html">新Y</a>
+<ul>
+<li><strong>–比對–</strong> <a href="reverse_v1.html">倒回歸(舊的Y取值方法<strong>不要了</strong>)</a></li>
+</ul></li>
+</ul>
+</div>
+<div id="panel" class="section level3">
+<h3>panel</h3>
+<p>還沒加入100的版本,但是資料名稱也是combo4_v5</p>
+<ul>
+<li><a href="panel96_104_v1.html">panel 96 104</a>(更新時間NA)<br />
+</li>
+<li><a href="panel92_104_v1.html">panel 92-104</a>(更新時間2020-09-15 23:07:34)
+<ul>
+<li><a href="Seexy92_104_v1.html">上面回歸變數的統計量</a></li>
+</ul></li>
+<li><a href="panel92_96_104_v1.html">panel 92,96,104</a>(更新時間2020-09-15 23:07:34)
+<ul>
+<li><a href="Seexy92_96_104_v1.html">上面回歸變數的統計量</a></li>
+</ul></li>
+<li>🆕 <a href="panel_oy_combo3_v1.html">panel 3期,Y是原來的Y,LIFE跑到X</a>(更新時間2020-09-20 13:14:05)</li>
+</ul>
+<hr />
+<ul>
+<li><a href="logit.html">羅吉斯回歸</a></li>
+<li><a href="seex.html">模型X,Y的統計量</a>
+<ul>
+<li><a href="seex104.html">🆕 加入新的統計量</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="資料處理" class="section level1">
+<h1>資料處理</h1>
+<div id="stage-0轉資料和修正" class="section level2">
+<h2>stage 0:轉資料和修正</h2>
+<ul>
+<li><a href="SAS資料轉STATA.html">SAS資料轉STATA</a></li>
+<li><a href="lookdata.html">看看資料</a></li>
+<li><a href="fixdata.html">原始資料轉過來的時候,有些問題修正後重新寫回去</a>(更新時間2020-10-02 22:22:52)</li>
+</ul>
+</div>
+<div id="stage-1得到模型的x變數" class="section level2">
+<h2>stage 1:得到模型的X變數</h2>
+<div id="版本5-1" class="section level3 quiz">
+<h3>🉐版本5</h3>
+<ul>
+<li><a href="Combin104_v5.html">104合併資料(更新時間2020-10-01 15:22:22)</a>: 合併,然後<strong>存檔成elder104_5</strong>( ⚠️ 因此，所有的分析程式要先執行這個)
+<ul>
+<li><a href="firstold104_v5.html">處理舊世代(更新時間2020-10-01 14:17:01)</a><br />
+</li>
+<li><a href="firstnew104_v5.html">處理新世代(更新時間2020-10-01 14:19:08)</a></li>
+</ul></li>
+<li><a href="first96_v5.html">96年資料</a>(更新時間2020-10-01 15:40:18)<br />
+</li>
+<li><a href="CombinData92_v5.html">92合併資料</a>(更新時間NA):
+<ul>
+<li>92年資料處理</li>
+<li><a href="first92R_v5.html">92R 舊</a>(更新時間2020-10-01 15:45:52)<br />
+</li>
+<li><a href="first92Y_v5.html">92Y 新</a>(更新時間2020-10-01 15:42:46)<br />
+</li>
+</ul></li>
+<li><a href="Combin9296104_v5.html">92 96 104</a>(更新時間2020-10-02 10:03:10)</li>
+<li><a href="Combin92to104_v5.html">92 96 100 104</a>(更新時間2020-10-03 12:04:23)</li>
+</ul>
+</div>
+<div id="版本4-1" class="section level3">
+<h3>版本4</h3>
+<p>🤷../transfer 資料夾的內容:</p>
+<ul>
+<li>elder104 elder104_v4 幾乎一樣(y1-y6)差別是V4版用的是新的計算方式,結果沒有差異。<br />
+</li>
+<li>elder92 elder96 都是用上述第4版的方法計算。</li>
+</ul>
+<hr />
+<ul>
+<li><a href="Combin104_v4.html">104合併資料版4</a>: 這個程式的用途是用來檢查新舊資料是不是差異很大,然後<strong>存檔成elder104_4</strong>( ⚠️ 因此，所有的分析程式要先執行這個)
+<ul>
+<li><a href="firstold_v4.html">處理舊世代(更新時間2020-09-15 23:04:13)</a><br />
+</li>
+<li><a href="firstnew_v4.html">處理新世代(更新時間2020-09-15 23:04:13)</a></li>
+</ul></li>
+<li><a href="first96_v1.html">96年資料</a>(更新時間2020-09-15 23:04:13)<br />
+</li>
+<li><a href="CombinData92.html">92合併資料</a>(更新時間2020-09-15 23:06:27):
+<ul>
+<li>92年資料處理</li>
+<li><a href="first92R_v1.html">92R 舊</a>(更新時間2020-09-17 22:43:42)<br />
+</li>
+<li><a href="first92Y_v1.html">92Y 新</a>(更新時間2020-09-15 23:04:13)<br />
+</li>
+</ul></li>
+<li><a href="Combine9296104.html">92 96 104</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="批次處理" class="section level1">
+<h1>批次處理</h1>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="kw">library</span>(Statamarkdown)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a>Statamarkdown<span class="op">::</span><span class="kw">find_stata</span>()</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a>SmdAid<span class="op">::</span><span class="kw">myknit</span>(<span class="st">&quot;firstnew104_v5.Rmd&quot;</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a>SmdAid<span class="op">::</span><span class="kw">myknit</span>(<span class="st">&quot;firstold104_v5.Rmd&quot;</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true"></a>SmdAid<span class="op">::</span><span class="kw">myknit</span>(<span class="st">&quot;Combin104_v5.Rmd&quot;</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true"></a>SmdAid<span class="op">::</span><span class="kw">myknit</span>(<span class="st">&quot;first96_v5.Rmd&quot;</span>)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true"></a>SmdAid<span class="op">::</span><span class="kw">myknit</span>(<span class="st">&quot;first92R_v5.Rmd&quot;</span>)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true"></a>SmdAid<span class="op">::</span><span class="kw">myknit</span>(<span class="st">&quot;first92Y_v5.Rmd&quot;</span>)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true"></a>SmdAid<span class="op">::</span><span class="kw">myknit</span>(<span class="st">&quot;Index.Rmd&quot;</span>)</span></code></pre></div>
+</div>
+<div id="其他分析用的" class="section level1">
+<h1>其他分析用的</h1>
+<p><a href="證明X有沒有縮放都一樣.html">證明X有沒有縮放都一樣</a><br />
+<a href="分析y2_v1.html">分析Y2,Y4(只有新世代)</a><br />
+<a href="Analysis_y1to6.html">分析變數Y1和Y6的01分類(只有新世代)</a></p>
+<hr />
+<blockquote>
+<p><a href="secondCheckNewscale.html">核對用</a>,因為Y的資料用一次性的方式取100分,所以這裡改版自<a href="second_v9.html">V9</a>,驗證看是不是一樣。(程序是使用<a href="firstnew_v4.html">1</a><a href="firstold_v4.html">2</a>,<a href="CombinData_v4.html">3</a>)<br />
+和第9版的結果差很多,回去驗證第6版, <a href="secondNewscale_vs_v6.html">新Y利用第6版</a> VS <a href="second_v6.html">第6版</a>。</p>
+</blockquote>
+</div>
+<div id="舊版" class="section level1">
+<h1>舊版</h1>
+<ul>
+<li><a href="">104合併資料版??</a>:
+<ul>
+<li><a href="first舊_v31.html">處理舊世代(更新時間NA)</a><br />
+</li>
+<li><a href="first_v31.html">處理新世代(更新時間NA)</a></li>
+</ul></li>
+<li><a href="CombinData_v2.html">104合併資料版2</a>: 這個程式的用途是用來檢查新舊資料是不是差異很大,然後<strong>存檔成elder104</strong>( ⚠️ 因此，所有的分析程式要先執行這個)
+<ul>
+<li><a href="firstold_v32.html">處理舊世代(更新時間NA)</a><br />
+</li>
+<li><a href="firstnew_v32.html">處理新世代(更新時間NA)</a></li>
+</ul></li>
+<li><a href="second_v41.html">新世代迴歸</a><br />
+</li>
+<li><a href="second_v5.html">合併迴歸,版5(更新時間NA)</a></li>
+</ul>
+<hr />
+<ul>
+<li>後面幾版的回歸應該都是使用v32版(elder104.dta)<a href="firstnew_v32.html">新</a> <a href="firstold_v32.html">舊</a>
+<ul>
+<li><a href="second_v6.html">合併迴歸,版6(更新時間NA)</a><br />
+</li>
+<li><a href="second_v7.html">線性迴歸,版7(更新時間NA)</a><br />
+</li>
+<li><a href="second_v8.html">線性迴歸,版8(更新時間NA)</a><br />
+</li>
+<li><a href="second_v9.html">線性迴歸,版9(更新時間NA)</a><br />
+</li>
+</ul></li>
+<li>倒過來的回歸使用4版資料(elderv4.dta)<a href="firstnew_v4.html">新</a> <a href="firstold_v4.html">舊</a></li>
+</ul>
+</div>
+<div id="其他程式參考" class="section level1">
+<h1>其他程式參考</h1>
+<p><a href="https://rdrr.io/github/Hemken/Statamarkdown/man/Statamarkdown-package.html">常用選項</a></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode css"><code class="sourceCode css"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a><span class="im">@counter-style</span> two-apples {</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true"></a>  system: cyclic<span class="op">;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true"></a>  symbols: <span class="st">&quot;</span><span class="sc">\1F34E</span><span class="st">&quot;</span> <span class="st">&quot;</span><span class="sc">\1F34F</span><span class="st">&quot;</span><span class="op">;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true"></a>  suffix: <span class="st">&quot; &quot;</span><span class="op">;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true"></a>}</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true"></a>ul { </span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true"></a>  <span class="kw">list-style-type</span>: two-apples<span class="op">;</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true"></a>}</span></code></pre></div>
+<p><a href="https://css-tricks.com/list-style-recipes/">css list</a><br />
+🔔 ✅"</p>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+
+</body>
+</html>

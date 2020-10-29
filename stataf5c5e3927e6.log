@@ -1,0 +1,40 @@
+
+
+running D:\Activity\elderman\Rmd\profile.do ...
+
+
+. xtdes
+
+      id:  1, 2, ..., 4672                                   n =       4672
+    year:  2003, 2007, ..., 2015                             T =          4
+           Delta(year) = 1 unit
+           Span(year)  = 13 periods
+           (id*year uniquely identifies each observation)
+
+Distribution of T_i:   min      5%     25%       50%       75%     95%     max
+                         2       2       3         4         4       4       4
+
+     Freq.  Percent    Cum. |  Pattern*
+ ---------------------------+----------
+     2710     58.01   58.01 |  1111
+      839     17.96   75.96 |  11..
+      762     16.31   92.27 |  111.
+       81      1.73   94.01 |  1.11
+       71      1.52   95.53 |  11.1
+       62      1.33   96.85 |  .111
+       56      1.20   98.05 |  1.1.
+       44      0.94   98.99 |  1..1
+       30      0.64   99.64 |  .11.
+       17      0.36  100.00 | (other patterns)
+ ---------------------------+----------
+     4672    100.00         |  XXXX
+ --------------------------------------
+ *Each column represents 4 periods.
+
+
+. duplicates report ybin id
+variable ybin not found
+r(111);
+
+end of do-file
+r(111);

@@ -1,0 +1,43 @@
+span.outposix {
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+span.outposix::before{
+  content:'🔖️';
+  }
+div.sidebar, div.base {
+  /* border: 3px solid #4e9a06;*/
+  border-radius: 5px;
+  padding: 1em;
+  margin: 1em 1em 1em 3.5em;
+  box-shadow: 6px 7px 7px black;
+  background-color: #c2e1a7;
+}
+
+
+div.quiz  {
+  /* border: 3px solid #4e9a06;*/
+  border-radius: 5px;
+  padding: 1em;
+  margin: 1em 1em 1em 3.5em;
+  box-shadow: 6px 7px 7px black;
+  background-color: #efc3b9;
+}
+
+
+.toc-content {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+div.main-container {
+  max-width: 2400px;
+}
+
+div.tocify {
+  width: 10%;
+  max-width: 260px;
+  max-height: 85%;
+}
+

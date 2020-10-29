@@ -1,0 +1,23 @@
+
+
+running D:\Activity\elderman\Rmd\profile.do ...
+
+
+. 
+. 
+. //use ../data/tlsa03o_de,clear
+. decodeds using ../data/tlsa11_de,gen(../tmp/xx.dta)
+qtype not convert
+ser_no4 not convert
+file ../tmp/xx.dta saved
+
+. use ../tmp/xx.dta,clear
+
+. 
+. qui ds
+
+. global ovar `r(varlist)'
+
+. 
+. 
+end of do-file

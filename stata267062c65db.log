@@ -1,0 +1,24 @@
+
+
+running D:\Activity\elderman\Rmd\profile.do ...
+--Break--
+--Break--
+r(1);
+
+
+. genfilename "$outposix",post(.html) pre("report/") autoinc 
+檔案名稱:report/out_combo4_logit_v5_1.html
+
+. esttab using `r(fn)',starlevels( * 0.10 ** 0.05 *** 0.010) r2 pr2 aic   replace label mtitle nobaselevel nolines nogaps onecell  nonumbers title("104新舊") ///
+>         nobaselevel refcat(1.child "子女數(base 0)" /// 
+>                            2.incom "收入(base 10-)" ///
+>                            2.age104 "年齡(base 50-54)" ///
+>                            1.educ "教育程度(base 不識字)" ///
+>                            1.incom2 "新收入(base 70-)" ///
+>                            1.child2 "子女數(base 0)"  ///
+>                            1.age2 "新年齡(base 50-59)",nolabel) 
+last estimates (.) not found
+r(301);
+
+end of do-file
+r(301);

@@ -1,0 +1,20 @@
+
+
+running D:\Activity\elderman\Rmd\profile.do ...
+
+
+. 
+. genfilename "$outposix",post(.docx) pre("report/") autoinc
+檔案名稱:report/out_combo4_seexy_v5_2.docx
+
+. local lastfn "`r(fn)'"
+
+. summtab , mean range   catvars( $xcont $xcat $xalt1  $xnew life) word title("
+> 全部視為分類變數") wordname("`r(fn)'") replace
+358
+Table 'report/out_combo4_seexy_v5_2.docx' saved in current working directory
+
+.  
+. 
+. 
+end of do-file
